@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*HEADER CSS*/
+
+.main-nav {
+    background-color: #1E7D4F; 
+    padding: 22px 0; 
+}
+
+.brand, .nav-link-custom {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.brand {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 20px; 
+    font-weight: 600;
+}
+
+.nav-list .nav-item .nav-link-custom {
+    margin-right: 20px;
+    position: relative;
+    padding: 0 0.5rem; 
+    transition: color 0.5s ease-in-out; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-list .nav-item .nav-link-custom::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-list .nav-item .nav-link-custom:hover {
+    color: lightgreen !important;
+    text-decoration: none; 
+}
+
+.nav-list .nav-item .nav-link-custom:hover::after {
+    width: 100%;
+}
+
+/* FOOTER CSS*/
+
+.footer {
+    background-color: #1E7D4F; 
+    padding: 20px 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .social-media a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px; 
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1.25rem; 
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    display: block; 
+    padding: 3px 0; 
+}
+
+.footer ul li a:hover {
+    transform: scale(1.05); 
+}
+
+.scaled-element {
+    transform: scale(1.05);
+    margin-bottom: 20px; 
+}
+
+.img-fluid{
+    width: 30px;
+    height: 30px;
+}
+
+.youtube{
+    padding-top: 7px;
+    width: 40px;
+    height: 43px;
+}
+
+.map-image{
+    width: 300px;
+    height: 200px;
+}

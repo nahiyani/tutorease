@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/*HEADER CSS*/
+
 .main-nav {
     background-color: #1E7D4F; /* Darker green */
     padding: 22px 0; /* Increase padding to increase navbar height */
@@ -35,34 +37,117 @@ body {
     height: 2px;
     background: white;
     position: absolute;
-    bottom: 0; /* Position the line at the bottom of the nav link */
+    bottom: 0;
     left: 0;
-    transition: width 0.3s ease-in-out; /* Add transition for width */
+    transition: width 0.3s ease-in-out; 
 }
 
 .nav-list .nav-item .nav-link-custom:hover {
     color: lightgreen !important;
-    text-decoration: none; /* Remove underline effect on hover */
+    text-decoration: none; 
 }
 
 .nav-list .nav-item .nav-link-custom:hover::after {
-    width: 100%; /* Expand the line to full width on hover */
+    width: 100%;
 }
 
 /*BODY CSS*/
 
 .intro{
-    height: 200px;
+    background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1356&h=668&fit=crop");
+    height: 400px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: block;
+    padding-top: 90px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-blend-mode: darken;
 }
 
-.btn-div{
+h2{
+    color: white;
+    font-size: 65px;
+    padding-bottom: 25px;
+}
+
+.btn{
+    width: 50%;
+    background-color: #1E7D4F;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #1E7D4F;
+}
+
+.information{
+    height: 600px;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    display: block;
+    padding: 40px 0;
+}
+
+.info-heading{
+    padding-top: 30px;
+    color: black;
+    font-size: 50px;
+}
+
+.info-heading-text{
+    padding: 50px;
+}
+
+.our-process{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E7D4F;
+    padding: 30px 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px; /* Add padding to create space on the sides */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 18rem;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#op{
+    color: white;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures the image covers the entire container without stretching */
+    margin-bottom: 10px; /* Add some space below the image if needed */
+}
+
+.card-text{
+    text-align: center;
 }
 
 /* FOOTER CSS*/
@@ -94,18 +179,18 @@ body {
 .footer ul li a {
     color: white;
     text-decoration: none;
-    transition: transform 0.5s ease-in-out; /* Add transition for scaling effect */
-    display: block; /* Make the link a block element to apply hover effect easily */
-    padding: 3px 0; /* Add some padding for better spacing */
+    transition: transform 0.5s ease-in-out;
+    display: block; 
+    padding: 3px 0; 
 }
 
 .footer ul li a:hover {
-    transform: scale(1.05); /* Scale the menu item to 1.1 times its size on hover */
+    transform: scale(1.05); 
 }
 
 .scaled-element {
-    transform: scale(1.05); /* Scale the element to 1.5 times its size */
-    margin-bottom: 20px; /* Add some space below the scaled element */
+    transform: scale(1.05);
+    margin-bottom: 20px; 
 }
 
 .img-fluid{
