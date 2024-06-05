@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-nav {
+    background-color: #1E7D4F; /* Darker green */
+    padding: 22px 0; /* Increase padding to increase navbar height */
+}
+
+.brand, .nav-link-custom {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.brand {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 20px; 
+    font-weight: 600;
+}
+
+.nav-list .nav-item .nav-link-custom {
+    margin-right: 20px;
+    position: relative;
+    padding: 0 0.5rem; /* Adjust padding to keep spacing consistent */
+    transition: color 0.5s ease-in-out; /* Add transition for color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-list .nav-item .nav-link-custom::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 0; /* Position the line at the bottom of the nav link */
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Add transition for width */
+}
+
+.nav-list .nav-item .nav-link-custom:hover {
+    color: lightgreen !important;
+    text-decoration: none; /* Remove underline effect on hover */
+}
+
+.nav-list .nav-item .nav-link-custom:hover::after {
+    width: 100%; /* Expand the line to full width on hover */
+}
+
+/*BODY CSS*/
+
+.intro{
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* FOOTER CSS*/
+
+.footer {
+    background-color: #1E7D4F; /* Green background color */
+    padding: 20px 0; /* Add some padding to the footer */
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .social-media a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px; /* Increase margin to add more space between icons */
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out; /* Add transition for scaling effect */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1.25rem; /* Increase margin to add more space below headings */
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out; /* Add transition for scaling effect */
+    display: block; /* Make the link a block element to apply hover effect easily */
+    padding: 3px 0; /* Add some padding for better spacing */
+}
+
+.footer ul li a:hover {
+    transform: scale(1.05); /* Scale the menu item to 1.1 times its size on hover */
+}
+
+.scaled-element {
+    transform: scale(1.05); /* Scale the element to 1.5 times its size */
+    margin-bottom: 20px; /* Add some space below the scaled element */
+}
+
+.img-fluid{
+    width: 30px;
+    height: 30px;
+}
+
+.youtube{
+    padding-top: 7px;
+    width: 40px;
+    height: 43px;
+}
+
+.map-image{
+    width: 300px;
+    height: 200px;
+}
