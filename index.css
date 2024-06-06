@@ -94,6 +94,9 @@ h2{
     justify-content: center;
     display: block;
     padding: 40px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .info-heading{
@@ -104,7 +107,7 @@ h2{
 
 .info-heading-text{
     padding: 50px;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .our-process{
@@ -113,7 +116,7 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: #1E7D4F;
-    padding: 30px 0;
+    padding: 70px 0;
 }
 
 .cards-container {
@@ -122,6 +125,7 @@ h2{
     width: 100%;
     max-width: 1200px;
     padding: 0 20px; /* Add padding to create space on the sides */
+    padding-bottom: 30px;
 }
 
 .card {
@@ -130,7 +134,7 @@ h2{
     align-items: center; /* Center content horizontally */
     justify-content: center; /* Center content vertically */
     width: 18rem;
-    margin: 10px;
+    margin: 20px; /* Increased margin to widen the space between cards */
     padding-top: 30px;
 }
 
@@ -147,10 +151,36 @@ h2{
     margin-bottom: 10px; /* Add some space below the image if needed */
 }
 
-.card-text{
+#carouselExampleIndicators{
+    padding-bottom: 25px;
+}
+
+#subject-header{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 75px;
+}
+
+.card-text {
     text-align: center;
 }
 
+.carousel-inner {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    width: 100%; /* Ensure it takes the full width */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+}
+
+.subject-card {
+    flex: 0 0 45%; /* Adjust the width of the cards to fit 2 per slide */
+    display: inline-block;
+    margin: 10px;
+}
+
+ 
 /* FOOTER CSS*/
 
 .footer {

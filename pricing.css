@@ -51,6 +51,134 @@ body {
     width: 100%;
 }
 
+/*BODY CSS*/
+
+.plans-section {
+    padding: 100px 0; /* Increased padding for spacing */
+}
+
+#plans-intro {
+    background-color: #ffffff; /* White background for plans header */
+    padding: 50px 0; /* Padding for header */
+}
+
+#plans-cards {
+    background-color: #28a745; /* Green background for cards section */
+    padding: 50px 0; /* Padding for cards section */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width */
+}
+
+.plans-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.plans-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.plan-card {
+    background-color: #ffffff; /* White background color for cards */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px; /* Increased card height */
+    margin-bottom: 40px; /* Increased margin bottom for spacing */
+    padding-bottom: 20px; /* Padding at the bottom of the card */
+}
+
+.plan-price-section {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    font-size: 48px;
+    color: white;
+}
+
+.plan-duration {
+    font-size: 18px;
+    color: white;
+}
+
+.plan-type {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.plan-features {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-features i {
+    margin-right: 8px;
+    color: #28a745;
+}
+
+/* Button Styles */
+.btn {
+    width: 50%; /* Make buttons stretch across */
+    margin-top: auto; /* Push the button to the bottom */
+    padding: 10px; /* Padding for buttons */
+}
+
+.img-profile{
+    width: 300px;
+    height: 300px;
+}
+
+/* Testimony Section */
+.testimony-section {
+    background-color: #ffffff; /* White background color */
+    color: #000000; /* Black text color */
+    padding: 100px 0; /* Increased padding for spacing */
+}
+
+.testimony-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.testimony-text {
+    font-size: 16px;
+    margin-bottom: 30px; /* Increased margin bottom for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.testimony-author {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Align author name to the left */
+}
+
 /* FOOTER CSS*/
 
 .footer {
