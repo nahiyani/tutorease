@@ -51,6 +51,64 @@ body {
     width: 100%;
 }
 
+/* BODY CSS */
+
+.accordion-button {
+    background-color: #1E7D4F;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1E7D4F;
+    background-color: white;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body {
+    border: 2px solid #1E7D4F;
+    border-top: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #1E7D4F;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-image {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+button.btn-success {
+    background-color: #1E7D4F;
+    border: none;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 75px;
+}
+
 /* FOOTER CSS*/
 
 .footer {

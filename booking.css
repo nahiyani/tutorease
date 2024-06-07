@@ -51,6 +51,37 @@ body {
     width: 100%;
 }
 
+/* FORM CSS*/
+
+.booking-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-green {
+    background-color: #1E7D4F;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #155a37;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background-color: #1E7D4F;
+    border-color: #1E7D4F;
+}
+
+.timepicker-picker .btn-primary {
+    background-color: #1E7D4F;
+    border-color: #1E7D4F;
+}
+
 /* FOOTER CSS*/
 
 .footer {
