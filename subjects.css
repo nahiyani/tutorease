@@ -58,7 +58,9 @@ body {
     border: 2px solid white;
     color: white;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem; /* Increased font size for subjects */
+    padding: 1rem 1.5rem; /* Increased padding for bigger keys */
+    height: 4rem; /* Increased height for accordion keys */
 }
 
 .accordion-button:focus {
@@ -66,8 +68,12 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #1E7D4F;
-    background-color: white;
+    color: white;
+    background-color: #1E7D4F;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Make arrows white */
 }
 
 .accordion-item {
@@ -75,18 +81,37 @@ body {
 }
 
 .accordion-body {
-    border: 2px solid #1E7D4F;
-    border-top: none;
     color: #333;
-    font-size: 1rem;
+    font-size: 1rem; /* Increased font size for descriptions */
+    border: 2px solid #1E7D4F; /* Add border around the descriptions */
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .description {
     text-align: center;
     padding: 20px;
-    border: 2px solid #1E7D4F;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button.btn-success {
+    background-color: #1E7D4F;
+    border: none;
+    padding: 10px 50px;
+    font-size: 1rem; /* Original font size */
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+h1.subject-heading {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+p.subject-description {
+    font-size: 25px; /* Much larger description */
+    padding-top: 10px;
 }
 
 .bg-image {
@@ -96,17 +121,8 @@ body {
     border-radius: 10px;
 }
 
-button.btn-success {
-    background-color: #1E7D4F;
-    border: none;
-}
-
-.container {
-    padding-bottom: 100px;
-}
-
-h1 {
-    font-size: 75px;
+.accordion .accordion-collapse {
+    border-top: 1px solid #1E7D4F; /* Ensure borders remain green */
 }
 
 /* FOOTER CSS*/

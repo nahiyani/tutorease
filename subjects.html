@@ -48,12 +48,9 @@
 
 <div class="container">
     <div class="text-center my-5">
-        <img src="subjects-banner.png" alt="Subjects Banner" class="img-fluid">
-        <h1 class="my-4" style="font-size: 75px;">SUBJECTS</h1>
         <div class="description my-4">
-            <div class="bg-image" style="background-image: url('background-image.png');">
-                <p>Explore our wide range of subjects and find the perfect tutor for your academic needs. With TutorEase, you can excel in your studies and achieve your goals.</p>
-            </div>
+            <h1 class="subject-heading">SUBJECTS</h1>
+            <p class="subject-description">Explore our wide range of subjects and find the perfect tutor for your academic needs. With TutorEase, you can excel in your studies and achieve your goals.</p>
         </div>
     </div>
     <div class="accordion" id="subjectsAccordion">
@@ -63,7 +60,7 @@
                     MATH
                 </button>
             </h2>
-            <div id="collapseMath" class="accordion-collapse collapse" aria-labelledby="headingMath" data-bs-parent="#subjectsAccordion">
+            <div id="collapseMath" class="accordion-collapse collapse" aria-labelledby="headingMath">
                 <div class="accordion-body">
                     Master the world of numbers with our expert math tutors. Whether it's algebra, calculus, or geometry, TutorEase has got you covered. Fun fact: Did you know math helps improve problem-solving skills? <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -76,7 +73,7 @@
                     ENGLISH
                 </button>
             </h2>
-            <div id="collapseEnglish" class="accordion-collapse collapse" aria-labelledby="headingEnglish" data-bs-parent="#subjectsAccordion">
+            <div id="collapseEnglish" class="accordion-collapse collapse" aria-labelledby="headingEnglish">
                 <div class="accordion-body">
                     Enhance your language skills with our English tutors. From grammar to literature, we help you excel in all aspects. Did you know reading regularly can boost your brain power? <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -89,7 +86,7 @@
                     CHEMISTRY
                 </button>
             </h2>
-            <div id="collapseChemistry" class="accordion-collapse collapse" aria-labelledby="headingChemistry" data-bs-parent="#subjectsAccordion">
+            <div id="collapseChemistry" class="accordion-collapse collapse" aria-labelledby="headingChemistry">
                 <div class="accordion-body">
                     Dive into the world of molecules and reactions with our chemistry tutors. Understand the building blocks of matter and excel in your exams. Fun fact: Water expands when it freezes, making ice less dense than liquid water. <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -102,7 +99,7 @@
                     PHYSICS
                 </button>
             </h2>
-            <div id="collapsePhysics" class="accordion-collapse collapse" aria-labelledby="headingPhysics" data-bs-parent="#subjectsAccordion">
+            <div id="collapsePhysics" class="accordion-collapse collapse" aria-labelledby="headingPhysics">
                 <div class="accordion-body">
                     Explore the laws of nature with our physics tutors. From mechanics to electromagnetism, TutorEase helps you understand complex concepts. Fun fact: Did you know light takes 8 minutes and 20 seconds to travel from the Sun to Earth? <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -115,7 +112,7 @@
                     BIOLOGY
                 </button>
             </h2>
-            <div id="collapseBiology" class="accordion-collapse collapse" aria-labelledby="headingBiology" data-bs-parent="#subjectsAccordion">
+            <div id="collapseBiology" class="accordion-collapse collapse" aria-labelledby="headingBiology">
                 <div class="accordion-body">
                     Uncover the secrets of life with our biology tutors. From genetics to ecosystems, we help you grasp the wonders of living organisms. Did you know the human body contains about 37.2 trillion cells? <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -128,7 +125,7 @@
                     FRENCH
                 </button>
             </h2>
-            <div id="collapseFrench" class="accordion-collapse collapse" aria-labelledby="headingFrench" data-bs-parent="#subjectsAccordion">
+            <div id="collapseFrench" class="accordion-collapse collapse" aria-labelledby="headingFrench">
                 <div class="accordion-body">
                     Learn the beautiful French language with our expert tutors. From vocabulary to conversation, TutorEase helps you become fluent. Fun fact: French is the official language in 29 countries. <br><br>
                     <a href="booking.html"><button class="btn btn-success">Book Now!</button></a>
@@ -140,6 +137,19 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+    // Allow multiple accordion items to stay open
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = document.querySelector(button.getAttribute('data-bs-target'));
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+            } else {
+                content.classList.add('show');
+            }
+        });
+    });
+</script>
 
 <footer class="footer bg-success text-white">
     <div class="container py-4">

@@ -53,13 +53,46 @@ body {
 
 /* FORM CSS*/
 
+h1 {
+    font-size: 75px;
+    color: #333;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.book-session-paragraph {
+    padding-bottom: 25px;
+}
+
 .booking-container {
     max-width: 600px;
     margin: auto;
     background: white;
-    padding: 20px;
+    padding: 50px; /* Adjusted padding for form edge spacing */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px; /* Increased bottom margin for more spacing */
+    border: 2px solid #1E7D4F; /* Make the edge of the form wider */
+}
+
+.booking-container label {
+    font-weight: bold; /* Bolder text for titles on top of each textbox */
+    display: block;
+    margin-bottom: 10px; /* Spacing between label and input */
+}
+
+.booking-container input,
+.booking-container textarea {
+    width: 100%;
+    padding: 10px; /* Adjusted padding inside input and textarea */
+    margin-bottom: 20px; /* Spacing between input/textarea elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.booking-container textarea {
+    height: 150px; /* Default larger size for message box */
 }
 
 .btn-green {
@@ -81,6 +114,7 @@ body {
     background-color: #1E7D4F;
     border-color: #1E7D4F;
 }
+
 
 /* FOOTER CSS*/
 
