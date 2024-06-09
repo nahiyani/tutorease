@@ -132,11 +132,9 @@ textarea.form-control {
 }
 
 .btn-green:hover {
-    background-color: #155a37;
-}
-
-.mt-5 {
-    margin-top: 3rem;
+    background-color: white;
+    color:#1E7D4F;
+    border: 2px solid #1E7D4F;
 }
 
 .modal {
@@ -172,14 +170,12 @@ textarea.form-control {
     cursor: pointer;
 }
 
-/* Error Modal */
 #errorModal .modal-content {
-    background-color: #ffcccc; /* Bright red */
+    background-color: #ffcccc;
 }
 
-/* Success Modal */
 #successModal .modal-content {
-    background-color: #d4edda; /* Light green */
+    background-color: #d4edda; 
 }
 
 /* FOOTER CSS*/
@@ -218,11 +214,6 @@ textarea.form-control {
 
 .footer ul li a:hover {
     transform: scale(1.05); 
-}
-
-.scaled-element {
-    transform: scale(1.05);
-    margin-bottom: 20px; 
 }
 
 .img-fluid {

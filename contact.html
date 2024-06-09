@@ -101,11 +101,9 @@
             const message = document.getElementById("message").value;
 
             if (firstName && lastName && email && subject && message) {
-                // If all fields are filled out
                 showModal("successModal");
                 form.reset();
             } else {
-                // If any field is missing
                 showModal("errorModal");
             }
         });
@@ -117,7 +115,6 @@
             closeBtn.addEventListener("click", function () {
                 modal.style.display = "none";
             });
-            // Hide modal after 3 seconds
             setTimeout(function () {
                 modal.style.display = "none";
             }, 3000);
