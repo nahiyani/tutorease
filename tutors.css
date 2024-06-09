@@ -78,10 +78,14 @@ body {
 .btn-success {
     background-color: #1E7D4F;
     border: none;
+    text-decoration: none;
 }
 
 .btn-success:hover {
-    background-color: #1E7D4F;
+    background-color: #ffffff;
+    color: #1E7D4F;
+    text-decoration: none;
+    border: 2px solid #1E7D4F;
 }
 
 .pagination .page-link {
@@ -112,7 +116,11 @@ body {
     color: #1E7D4F !important;
 }
 
-.book-now{
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body a:hover {
     text-decoration: none;
 }
 
@@ -121,6 +129,7 @@ body {
 .footer {
     background-color: #1E7D4F; 
     padding: 20px 0; 
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer .social-media a {
@@ -158,18 +167,32 @@ body {
     margin-bottom: 20px; 
 }
 
-.img-fluid{
+.img-fluid {
     width: 30px;
     height: 30px;
 }
 
-.youtube{
+.youtube {
     padding-top: 7px;
     width: 40px;
     height: 43px;
 }
 
-.map-image{
+.map-image {
     width: 300px;
     height: 200px;
+}
+
+.btn-white {
+    background-color: white;
+    border: none;
+    color: #1E7D4F;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f1f1f1;
 }

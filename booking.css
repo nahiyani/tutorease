@@ -183,7 +183,7 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
-/* Error Modal */
+
 #errorModal .modal-content {
     background-color: #ffcccc; /* Bright red */
 }
@@ -231,18 +231,32 @@ h1 {
     margin-bottom: 20px; 
 }
 
-.img-fluid{
+.img-fluid {
     width: 30px;
     height: 30px;
 }
 
-.youtube{
+.youtube {
     padding-top: 7px;
     width: 40px;
     height: 43px;
 }
 
-.map-image{
+.map-image {
     width: 300px;
     height: 200px;
+}
+
+.btn-white {
+    background-color: white;
+    border: none;
+    color: #1E7D4F;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f1f1f1;
 }

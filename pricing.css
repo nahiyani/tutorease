@@ -53,7 +53,6 @@ body {
 
 /*BODY CSS*/
 
-/* Plans Section */
 .plans-section {
     padding: 50px 0; 
 }
@@ -214,6 +213,8 @@ body {
 
 /* FOOTER CSS*/
 
+/* FOOTER CSS*/
+
 .footer {
     background-color: #1E7D4F; 
     padding: 20px 0; 
@@ -255,18 +256,32 @@ body {
     margin-bottom: 20px; 
 }
 
-.img-fluid{
+.img-fluid {
     width: 30px;
     height: 30px;
 }
 
-.youtube{
+.youtube {
     padding-top: 7px;
     width: 40px;
     height: 43px;
 }
 
-.map-image{
+.map-image {
     width: 300px;
     height: 200px;
+}
+
+.btn-white {
+    background-color: white;
+    border: none;
+    color: #1E7D4F;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f1f1f1;
 }
