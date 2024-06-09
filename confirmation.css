@@ -51,81 +51,41 @@ body {
     width: 100%;
 }
 
-/* BODY CSS */
-
-.accordion-button {
-    background-color: #1E7D4F;
-    border: 2px solid white;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem; 
-    padding: 1rem 1.5rem; 
-    height: 4rem; 
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-    color: white;
-    background-color: #1E7D4F;
-}
-
-.accordion-button::after {
-    filter: brightness(0) invert(1); 
-}
-
-.accordion-item {
-    border: none;
-}
-
-.accordion-body {
-    color: #333;
-    font-size: 1rem; 
-    border: 2px solid #1E7D4F; 
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.description {
+.success-message {
     text-align: center;
-    padding: 20px;
+    margin: 50px 0;
 }
-
-button.btn-success {
-    background-color: #1E7D4F;
-    border: none;
-    padding: 10px 50px;
-    font-size: 1rem; 
+.success-icon {
+    font-size: 100px;
+    color: #1E7D4F;
 }
-
-.container {
-    padding-bottom: 100px;
+.success-text {
+    font-size: 100px;
+    color: #1E7D4F;
+    font-weight: bold;
 }
-
-h1.subject-heading {
-    font-size: 75px;
+.success-details {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.highlight {
+    color: #1E7D4F;
     font-weight: bold;
 }
 
-p.subject-description {
-    font-size: 25px;
-    padding-top: 10px;
+.btn-return-home {
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #1E7D4F;
+    color: white;
+    width: 200px;
+    transition: background-color 0.3s, color 0.3s;
 }
-
-.bg-image {
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+.btn-return-home:hover {
+    background-color: white;
+    color: #1E7D4F;
+    border: 2px solid #1E7D4F;
 }
-
-.accordion .accordion-collapse {
-    border-top: 1px solid #1E7D4F; 
-}
-
-/* FOOTER CSS*/
 
 .footer {
     background-color: #1E7D4F; 

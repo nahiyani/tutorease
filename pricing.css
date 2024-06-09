@@ -26,6 +26,7 @@ body {
     position: relative;
     padding: 0 0.5rem; 
     transition: color 0.5s ease-in-out; 
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
@@ -54,32 +55,32 @@ body {
 
 /* Plans Section */
 .plans-section {
-    padding: 50px 0; /* Increased padding for spacing */
+    padding: 50px 0; 
 }
 
 #plans-intro {
-    background-color: #ffffff; /* White background for plans header */
-    padding: 50px 0; /* Padding for header */
+    background-color: #ffffff;
+    padding: 50px 0; 
 }
 
 #plans-cards {
-    background-color: #1E7D4F; /* Green background for cards section */
-    padding: 50px 0; /* Padding for cards section */
-    margin: 0; /* Remove default margin */
-    width: 100%; /* Full width */
+    background-color: #1E7D4F; 
+    padding: 50px 0; 
+    margin: 0; 
+    width: 100%; 
 }
 
 .pricing-title {
     font-size: 75px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .clock-icon {
     width: 25px;
     height: 25px;
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px; 
 }
 
 .plans-description {
@@ -88,21 +89,21 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    color: #333; /* Dark text color */
-    line-height: 1.6; /* Increased line height for better readability */
+    color: #333; 
+    line-height: 1.6; 
 }
 
 .plan-card {
-    background-color: #ffffff; /* White background color for cards */
+    background-color: #ffffff; 
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 550px; /* Increased card height */
-    margin-bottom: 40px; /* Increased margin bottom for spacing */
-    padding-bottom: 20px; /* Padding at the bottom of the card */
+    height: 550px; 
+    margin-bottom: 40px; 
+    padding-bottom: 20px;
 }
 
 .plan-price-section {
@@ -113,7 +114,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
+    align-items: center; 
 }
 
 .plan-price {
@@ -127,18 +128,18 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center align items */
+    justify-content: center; 
 }
 
 .plan-duration img.icon {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
 }
 
 .plan-type {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .plan-features {
@@ -154,17 +155,16 @@ body {
 }
 
 .plan-features img.icon {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px;
     color: #1E7D4F;
     width: 20px;
     height: 20px;
 }
 
-/* Button Styles */
 .btn {
-    width: 75%; /* Make buttons stretch across */
-    margin-top: auto; /* Push the button to the bottom */
-    padding: 10px; /* Padding for buttons */
+    width: 75%; 
+    margin-top: auto; 
+    padding: 10px; 
 }
 
 .img-profile {
@@ -172,40 +172,39 @@ body {
     height: 300px;
 }
 
-/* Testimony Section */
 .testimony-section {
-    background-color: #ffffff; /* White background color */
-    color: #333; /* Black text color */
-    padding: 100px 0; /* Increased padding for spacing */
+    background-color: #ffffff; 
+    color: #333; 
+    padding: 100px 0; 
 }
 
 .testimony-title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .testimony-text {
     font-size: 16px;
-    margin-bottom: 30px; /* Increased margin bottom for spacing */
-    text-align: left; /* Align text to the left */
-    padding-left: 20px; /* Add padding to the left of the text */
+    margin-bottom: 30px;
+    text-align: left; 
+    padding-left: 20px; 
 }
 
 .testimony-author {
     font-size: 18px;
     font-weight: bold;
-    text-align: left; /* Align author name to the left */
-    padding-left: 20px; /* Add padding to the left of the author name */
+    text-align: left; 
+    padding-left: 20px; 
 }
 
 .testimony-section .row {
-    align-items: center; /* Center align items vertically */
+    align-items: center; 
 }
 
 .testimony-section img {
-    margin-right: 20px; /* Add margin to the right of the image */
+    margin-right: 20px; 
 }
 
 .testimonial-pic {

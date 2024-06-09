@@ -5,8 +5,8 @@ body {
 /*HEADER CSS*/
 
 .main-nav {
-    background-color: #1E7D4F; /* Darker green */
-    padding: 22px 0; /* Increase padding to increase navbar height */
+    background-color: #1E7D4F; 
+    padding: 22px 0; 
 }
 
 .brand, .nav-link-custom {
@@ -24,8 +24,8 @@ body {
 .nav-list .nav-item .nav-link-custom {
     margin-right: 20px;
     position: relative;
-    padding: 0 0.5rem; /* Adjust padding to keep spacing consistent */
-    transition: color 0.5s ease-in-out; /* Add transition for color */
+    padding: 0 0.5rem; 
+    transition: color 0.5s ease-in-out; 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -53,7 +53,7 @@ body {
 
 /*BODY CSS*/
 
-.intro{
+.intro {
     background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1356&h=668&fit=crop");
     height: 400px;
     text-align: center;
@@ -63,17 +63,17 @@ body {
     padding-top: 90px;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: darken;
 }
 
-h2{
+h2 {
     color: white;
     font-size: 65px;
     padding-bottom: 25px;
 }
 
-.btn{
+.btn {
     width: 50%;
     background-color: #1E7D4F;
     color: white;
@@ -82,35 +82,35 @@ h2{
     border-radius: 15px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: #1E7D4F;
 }
 
-.information{
-    height: 600px;
+.information {
+    height: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: block;
     padding: 40px 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: white; 
     padding: 50px 20px;
-    text-align: center;
 }
 
-.info-heading{
+.info-heading {
     padding-top: 30px;
     color: black;
     font-size: 50px;
+    font-weight: bold; 
 }
 
-.info-heading-text{
+.info-heading-text {
     padding: 50px;
     font-size: 15px;
 }
 
-.our-process{
+.our-process {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,38 +124,39 @@ h2{
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px; /* Add padding to create space on the sides */
+    padding: 0 20px; 
     padding-bottom: 30px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center; 
+    justify-content: center; 
     width: 18rem;
-    margin: 20px; /* Increased margin to widen the space between cards */
+    margin: 20px; 
     padding-top: 30px;
+    height: 300px;
 }
 
-#op{
+#op {
     color: white;
     font-size: 75px;
     margin-bottom: 20px;
 }
 
 .card-img-top {
-    width: 100px;
-    height: 100px;
-    object-fit: cover; /* Ensures the image covers the entire container without stretching */
-    margin-bottom: 10px; /* Add some space below the image if needed */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-bottom: 10px;
 }
 
-#carouselExampleIndicators{
+#carouselExampleIndicators {
     padding-bottom: 25px;
 }
 
-#subject-header{
+#subject-header {
     text-align: center;
     padding: 25px 0;
     font-size: 75px;
@@ -166,40 +167,67 @@ h2{
 }
 
 .carousel-inner {
+    width: 100%;
+}
+
+.carousel-item {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     align-items: center; 
-    width: 100%; /* Ensure it takes the full width */
-    padding: 0; /* Remove any default padding */
-    margin: 0; /* Remove any default margin */
 }
 
 .subject-card {
-    flex: 0 0 45%; /* Adjust the width of the cards to fit 2 per slide */
+    flex: 0 0 45%; 
     display: inline-block;
     margin: 10px;
+    border: 2px solid #1E7D4F; 
 }
 
- 
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
 /* FOOTER CSS*/
 
 .footer {
-    background-color: #1E7D4F; /* Green background color */
-    padding: 20px 0; /* Add some padding to the footer */
+    background-color: #1E7D4F; 
+    padding: 20px 0; 
     font-family: 'Poppins', sans-serif;
 }
 
 .footer .social-media a {
     color: white;
     font-size: 1.5rem;
-    margin-right: 15px; /* Increase margin to add more space between icons */
+    margin-right: 15px;
     text-decoration: none;
-    transition: transform 0.5s ease-in-out; /* Add transition for scaling effect */
+    transition: transform 0.5s ease-in-out; 
 }
 
 .footer h5 {
     font-weight: bold;
-    margin-bottom: 1.25rem; /* Increase margin to add more space below headings */
+    margin-bottom: 1.25rem; 
 }
 
 .footer ul {
@@ -224,18 +252,29 @@ h2{
     margin-bottom: 20px; 
 }
 
-.img-fluid{
+.img-fluid {
     width: 30px;
     height: 30px;
 }
 
-.youtube{
+.youtube {
     padding-top: 7px;
     width: 40px;
     height: 43px;
 }
 
-.map-image{
+.map-image {
     width: 300px;
     height: 200px;
+}
+
+@media (max-width: 768px) {
+    .cards-container, .carousel-inner .carousel-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .subject-card {
+        flex: 1 1 100%;
+    }
 }

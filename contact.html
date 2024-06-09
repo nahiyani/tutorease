@@ -46,40 +46,89 @@
     </div>
 </nav>
 
+<div class="modal" id="successModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Success! Someone will reach out to you shortly.</p>
+    </div>
+</div>
+
+<div class="modal" id="errorModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Error! Please fill out all fields.</p>
+    </div>
+</div>
+
 <div class="contact-container text-center mt-5">
     <h1 class="mb-4 display-4">GET IN TOUCH!</h1>
     <p class="description">Have questions or need more information? We're here to help! Reach out to us by email, phone, or fill out the form below, and our friendly team will be happy to assist you as soon as possible. Whether you're looking to book a session, learn more about our services, or provide feedback, we look forward to hearing from you.</p>
 
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
         <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" class="form-control" value="John">
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John">
         </div>
         <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" class="form-control" value="Doe">
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="form-control" value="abc@gmail.com">
+            <input type="email" id="email" name="email" class="form-control" placeholder="abc@gmail.com">
         </div>
         <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" class="form-control">
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
         </div>
         <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" class="form-control"></textarea>
+            <textarea id="message" name="message" class="form-control" placeholder="Leave us a message!"></textarea>
         </div>
         <button type="submit" class="btn btn-green">SEND</button>
     </form>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            if (firstName && lastName && email && subject && message) {
+                // If all fields are filled out
+                showModal("successModal");
+                form.reset();
+            } else {
+                // If any field is missing
+                showModal("errorModal");
+            }
+        });
+
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            const closeBtn = modal.querySelector(".close");
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+            // Hide modal after 3 seconds
+            setTimeout(function () {
+                modal.style.display = "none";
+            }, 3000);
+        }
+    });
+</script>
+
 <footer class="footer bg-success text-white">
     <div class="container py-4">
         <div class="row">
             <div class="col-md-3">
-                <!-- Map Image -->
                 <img src="images/hqlocation.png" alt="Map" class="map-image">
             </div>
             <div class="col-md-3">
