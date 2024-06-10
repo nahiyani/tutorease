@@ -5,8 +5,8 @@ body {
 /*HEADER CSS*/
 
 .main-nav {
-    background-color: #1E7D4F;
-    padding: 22px 0;
+    background-color: #1E7D4F; 
+    padding: 22px 0; 
 }
 
 .brand, .nav-link-custom {
@@ -17,15 +17,15 @@ body {
 .brand {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    padding-left: 20px;
+    padding-left: 20px; 
     font-weight: 600;
 }
 
 .nav-list .nav-item .nav-link-custom {
     margin-right: 20px;
     position: relative;
-    padding: 0 0.5rem;
-    transition: color 0.5s ease-in-out;
+    padding: 0 0.5rem; 
+    transition: color 0.5s ease-in-out; 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -39,19 +39,17 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; 
 }
 
 .nav-list .nav-item .nav-link-custom:hover {
     color: lightgreen !important;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .nav-list .nav-item .nav-link-custom:hover::after {
     width: 100%;
 }
-
-/*BODY CSS*/
 
 h1 {
     font-size: 75px;
@@ -68,31 +66,31 @@ h1 {
     max-width: 600px;
     margin: auto;
     background: white;
-    padding: 50px;
+    padding: 50px; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 70px;
-    border: 2px solid #1E7D4F;
+    margin-bottom: 70px; 
+    border: 2px solid #1E7D4F; 
 }
 
 .booking-container label {
-    font-weight: bold;
+    font-weight: bold; 
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 .booking-container input,
 .booking-container textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px; 
+    margin-bottom: 20px; 
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .booking-container textarea {
-    height: 150px;
+    height: 150px; 
 }
 
 .btn-green {
@@ -106,6 +104,57 @@ h1 {
     border: 2px solid #1E7D4F;
 }
 
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+    background-color: #1E7D4F;
+    border-color: #1E7D4F;
+}
+
+.timepicker-picker .btn-primary {
+    background-color: #1E7D4F;
+    border-color: #1E7D4F;
+}
+
+/* Time Picker */
+.timepicker-picker {
+    width: 100%;
+}
+
+/* Calendar Format */
+.datepicker-dropdown {
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.datepicker table thead tr:first-child th {
+    border-top: none;
+}
+
+.datepicker table th,
+.datepicker table td {
+    text-align: center;
+}
+
+.datepicker table th {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.datepicker table td {
+    padding: 10px 0;
+}
+
+.datepicker table td.day:hover,
+.datepicker table td.day.focused {
+    background-color: #f0f0f0;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -117,21 +166,18 @@ h1 {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal-content {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
 }
-
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: black;
@@ -140,28 +186,28 @@ h1 {
 }
 
 #errorModal .modal-content {
-    background-color: #ffcccc; 
+    background-color: #ffcccc; /* Bright red */
 }
 
-/*FOOTER CSS*/
+/* FOOTER CSS*/
 
 .footer {
-    background-color: #1E7D4F;
-    padding: 20px 0;
+    background-color: #1E7D4F; 
+    padding: 20px 0; 
     font-family: 'Poppins', sans-serif;
 }
 
 .footer .social-media a {
     color: white;
     font-size: 1.5rem;
-    margin-right: 15px;
+    margin-right: 15px; 
     text-decoration: none;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; 
 }
 
 .footer h5 {
     font-weight: bold;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem; 
 }
 
 .footer ul {
@@ -173,12 +219,17 @@ h1 {
     color: white;
     text-decoration: none;
     transition: transform 0.5s ease-in-out;
-    display: block;
-    padding: 3px 0;
+    display: block; 
+    padding: 3px 0; 
 }
 
 .footer ul li a:hover {
+    transform: scale(1.05); 
+}
+
+.scaled-element {
     transform: scale(1.05);
+    margin-bottom: 20px; 
 }
 
 .img-fluid {
