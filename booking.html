@@ -94,9 +94,10 @@
                 <span class="date-icon position-absolute" style="top: 38px; right: 10px; cursor: pointer;"><i class="fas fa-calendar-alt"></i></span>
             </div>
             <div class="mb-3 position-relative">
-                <label for="time" class="form-label">Time</label>
-                <input type="text" class="form-control" id="time" placeholder="00:00 AM">
-                <span class="time-icon position-absolute" style="top: 38px; right: 10px; cursor: pointer;"><i class="fas fa-clock"></i></span>
+                <div class="form-group col-md-6">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" class="form-control" required>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="firstName" class="form-label">First Name</label>
